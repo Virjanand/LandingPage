@@ -1,0 +1,35 @@
+@font-face {
+    font-family: matrix;
+    src: url(../fonts/MATRIX.ttf) format("truetype");
+}
+
+body {
+  position: absolute;
+  background-color: #070707;
+  color: #00A00D;
+  font-family: 'VT323', Arial, sans-serif;
+  top: 30%;
+  left: 40%;
+  width: 300px;
+  margin: -100px 0 0 -100px;
+  font-size: 150%;
+}
+
+::selection {
+  background: green;
+}
+
+h1 {
+  font-family: matrix, 'VT323', Arial, sans-serif;
+}
+
+a {
+  fcolor: #00A00D;
+  text-decoration: none;
+}
+a:link {
+  color: #00A00D;
+}
+a:visited{
+  color: #00A00D;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Virjanand">
+    <meta name="author" content="Virjanand Panday">
+
+    <title>Virjanand</title>
+
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=VT323' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="assets/stylesheets/main.css">
+
+  </head>
+
+  <body>
+
+    <h1>Virjanand</h1>
+
+    <p>Profession: Mendix Developer
+
+    </p>
+
+    <p>Interest: Web Development
+
+    </p>
+
+    <p>Find out more on:
+
+    </p>
+
+    <ul>
+
+      <li><a href="https://nl.linkedin.com/in/virjanand-panday-98440722">
+        LinkedIn</a>
+      </li>
+      <li><a href="https://twitter.com/pandavirjanand">
+        Twitter</a>
+      </li>
+      <li><a href="https://github.com/Virjanand">
+        Github</a>
+      </li>
+      <li><a href="../ProjectsWebsite/index.html">
+        Projects</a>
+      </li>
+
+    </ul>
+
+    <!-- cat stalking -->
+
+    <p style="text-align: center">
+      <img id="cat" src="assets/images/cat.png" style="position: relative">
+    </p>
+
+    <script>
+
+      var cat = document.querySelector("#cat");
+      var angle = 0, lastTime = null;
+      function animate(time) {
+        if (lastTime != null)
+          angle += (time - lastTime) * 0.0002;
+        lastTime = time;
+        cat.style.top = (Math.sin(angle) * 20) + "px";
+        cat.style.left = (Math.cos(angle) * 200) + "px";
+        requestAnimationFrame(animate);
+      }
+      requestAnimationFrame(animate);
+
+    </script>
+
+    <!-- end cat stalking -->
+
+  </body>
+
+</html>
